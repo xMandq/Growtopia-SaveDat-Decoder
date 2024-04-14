@@ -1,6 +1,7 @@
+import os
 from pprint import pprint
 
-DAT_FILE_PATH = r"../save.dat" # CHANGE TO SAVE.DAT PATH
+DAT_FILE_PATH = os.path.join(os.getenv("LOCALAPPDATA"), "Growtopia", "save.dat")
 
 class Decoder:
     Values = [
